@@ -1,9 +1,12 @@
-a {
-  color: rgb(175, 175, 175);
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-.container-fluid {
-  padding: 70px 0px;
+a {
+  color: rgb(175, 175, 175);
 }
 
 .navbar {
@@ -20,21 +23,14 @@ a {
   text-decoration: none;
 }
 
-.footer-padding {
-  padding-bottom: 60px;
-}
-
 .footer {
-  position: absolute;
-  text-align: center;
-  bottom: 0;
-  width: 100%;
-  height: 60px;
+  margin-top: auto;
+  height: 70px;
   background-color: #1abc9c;
 }
 
 .footer p {
-  margin-top: 25px;
-  font-size: 12px;
+  padding-top: 1.45rem;
+  text-align: center;
   color: #fff;
 }
