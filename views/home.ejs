@@ -13,11 +13,11 @@
         <%= post.title %>
       </h1>
       <p>
-        <% if (post.post.length> 100) { %>
-          <%= `${post.post.substring(0, 100)}... ` %>
-            <a href=<%=`/posts/${_.kebabCase(post.title)}` %> >Read More</a>
+        <% if (post.body.length>100) { %>
+          <%= `${post.body.substring(0, 100)}... ` %>
+            <a href=<%=`/posts/${post._id}` %> >Read More</a>
             <% } else { %>
-              <%= post.post %>
+              <%= post.body %>
       </p>
       <% }}) %>
   </div>
