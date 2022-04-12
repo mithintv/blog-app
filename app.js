@@ -2,7 +2,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
-const _ = require("lodash");
 
 // initializing custom modules
 const content = require(__dirname + "/template.js");
@@ -36,8 +35,6 @@ app.get("/", (req, res) => {
       res.render("home", {
         homeContent: content.homeStartingContent,
         postContent: posts,
-        // exporting lodash into home.ejs
-        _: _
       });
     }
   });
